@@ -1,0 +1,167 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: #000;
+}
+
+nav{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+
+nav .logo{
+	float: left;
+	font-size: 30px;
+	color: #fff;
+	line-height: 70px;
+	padding-left: 60px;
+}
+
+nav ul{
+	float: right;
+	list-style: none;
+	margin-right: 40px;
+	position: relative;
+}
+
+nav ul li{
+	float: left;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+nav ul	a:hover{
+	box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+	border-radius: 5px;
+}
+
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	line-height: 70px;
+	font-size: 18px;
+	padding: 8px 15px;
+}
+
+
+
+nav ul ul{
+	position: absolute;
+	top: 90px;
+	opacity: 0;
+	visibility: hidden;
+	transition: top .3s;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:hover > ul{
+	top: 70px;
+	opacity: 1;
+	visibility: visible;
+}
+
+nav ul ul li{
+	position: relative;
+	margin: 0;
+	width: 150px;
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a{
+	line-height: 50px;
+	text-align: center;
+}
+
+
+nav ul ul ul li{
+	position: relative;
+	top: -70px;
+	left: 150px;
+}
+
+
+
+
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+   nav ul{
+  	float: none;
+  	display: block;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+   nav ul{
+  	float: none;
+  	display: block;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  nav ul{
+  	float: none;
+  	display: block;
+  }
+  
+}
